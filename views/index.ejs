@@ -1,1 +1,11 @@
 <h1>File Upload</h1>
+
+<form enctype="multipart/form-data" action="/" method="POST">
+	<input type="file" name="myFile"><br />
+	<input type="submit" class="btn btn-primary" value="Submit">
+</form>
+
+<% if (recentUpload) { %>
+	<h2>Most recent upload:</h2>
+	<img src="<%=recentUpload%>" alt="recently uploaded picture">
+<% } %>
